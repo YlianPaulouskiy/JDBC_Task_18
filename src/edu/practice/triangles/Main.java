@@ -11,10 +11,12 @@ public class Main {
         Thread thread1 = new IsoscelesCheckThread("Равнобедренный поток");
         Thread thread2 = new RectangularCheckThread("Прямоугольный поток");
         Thread thread3 = new ObtuseCheckThread("Тупоугольный поток");
+        Thread thread4 = new ObtuseCheckThread("Равносторонний поток");
 
         thread1.start();
         thread2.start();
         thread3.start();
+        thread4.start();
 
     }
 }

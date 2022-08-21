@@ -24,6 +24,14 @@ public interface TriangleLogic {
     boolean isRectangular(Triangle triangle);
 
     /**
+     * find out if a triangle if Equilateral
+     *
+     * @param triangle Triangle element
+     * @return true if Equilateral
+     */
+    boolean isEquilateral(Triangle triangle);
+
+    /**
      * find out if a triangle if obtuse
      *
      * @param triangle Triangle element

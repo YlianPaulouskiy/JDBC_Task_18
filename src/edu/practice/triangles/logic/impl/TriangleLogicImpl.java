@@ -22,6 +22,12 @@ public class TriangleLogicImpl implements TriangleLogic {
     }
 
     @Override
+    public boolean isEquilateral(Triangle triangle) {
+        double[] sides = getSides(triangle);
+        return sides[0] == sides[1] && sides[1] == sides[2];
+    }
+
+    @Override
     public boolean isObtuse(Triangle triangle) {
         return checkObtuse(getSides(triangle));
     }
